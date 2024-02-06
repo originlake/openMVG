@@ -1,4 +1,4 @@
-#include_directories(${CMAKE_SOURCE_DIR}/include algorithms util nn .)
+#include_directories(${PROJECT_SOURCE_DIR}/include algorithms util nn .)
 
 #add_definitions(-D_FLANN_VERSION=${FLANN_VERSION})
 
