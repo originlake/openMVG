@@ -191,9 +191,9 @@ endif()
 # ==============================================================================
 # IMAGE IO detection
 # ==============================================================================
-find_package(JPEG QUIET)
-find_package(PNG QUIET)
-find_package(TIFF QUIET)
+# find_package(JPEG QUIET)
+# find_package(PNG QUIET)
+# find_package(TIFF QUIET)
 
 # Folders
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
@@ -257,7 +257,7 @@ ENDMACRO(UNIT_TEST)
 # - internal if cereal not found
 # - as of cereal:1.3.1 target requires component
 # ==============================================================================
-find_package(cereal QUIET CONFIG)
+# find_package(cereal QUIET CONFIG)
 if (NOT cereal_FOUND)
   add_library(cereal INTERFACE)
   target_include_directories(cereal
@@ -297,7 +297,7 @@ add_definitions(-DEIGEN_MPL2_ONLY)
 # - external by default if CERES_DIR_HINTS or find_package found a valid Ceres
 # - internal if ceres not found (ceres-solver+cxsparse+miniglog)
 # ==============================================================================
-find_package(Ceres QUIET HINTS ${CERES_DIR_HINTS})
+# find_package(Ceres QUIET HINTS ${CERES_DIR_HINTS})
 if (NOT Ceres_FOUND)
   set(OpenMVG_USE_INTERNAL_CERES ON)
   set(CERES_INCLUDE_DIRS
