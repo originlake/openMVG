@@ -118,8 +118,8 @@ endif()
 # ==============================================================================
 set(CMAKE_MODULE_PATH
   ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmakeFindModules)
-include(OptimizeForArchitecture)
-OptimizeForArchitecture()
+#include(OptimizeForArchitecture)
+#OptimizeForArchitecture()
 
 if (UNIX AND NOT OpenMVG_BUILD_COVERAGE)
   set(CMAKE_C_FLAGS_RELEASE "-O3")
